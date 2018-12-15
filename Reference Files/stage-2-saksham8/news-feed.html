@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Saksham Aggarwal">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="News Feed" content="Displays daily news using a filter">
+    <title>News Feed</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news-feed.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" class="img-responsive header-img" alt="Student Hub Logo"></a>
+        <p class="social-media">
+            <a href="#facebook" class="fa fa-facebook" aria-label="Facebook"></a>
+            <a href="#twitter" class="fa fa-twitter" aria-label="Twitter"></a>
+            <a href="#google" class="fa fa-google" aria-label="Googel"></a>
+        </p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="news-feed.html">News Feed</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="campus-events.html">Campus Events</a>
+                    <a class="dropdown-item" href="#shopping">Shopping</a>
+                    <a class="dropdown-item" href="storage-locator.html">Storage Space Locator</a>
+                </div>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card" id="news-articles">
+                </div>
+            </div>
+
+            <div class="rightcolumn">
+                <div class="card">
+                    <h3 id="news-channels">News Channels</h3>
+                    <div><input id="abc-news" type="checkbox" name="ABC News" value="abc-news" onclick="checkboxClick()">ABC News</div>
+                    <div><input id="bbc-news" type="checkbox" name="BBC News" value="bbc-news" onclick="checkboxClick()">BBC News</div>
+                    <div><input id="bbc-sport" type="checkbox" name="BBC Sport" value="bbc-sport" onclick="checkboxClick()">BBC Sport</div>
+                    <div><input id="business-insider" type="checkbox" name="Business Insider" value="business-insider" onclick="checkboxClick()">Business Insider</div>
+                    <div><input id="buzzfeed" type="checkbox" name="BuzzFeed" value="buzzfeed" onclick="checkboxClick()">BuzzFeed</div>
+                    <div><input id="cbc-news" type="checkbox" name="CBC News" value="cbc-news" onclick="checkboxClick()">CBC News</div>
+                    <div><input id="cnbc" type="checkbox" name="CNBC" value="cnbc" onclick="checkboxClick()">CNBC</div>
+                    <div><input id="cnn" type="checkbox" name="CNN" value="cnn" onclick="checkboxClick()">CNN</div>
+                    <div><input id="daily-mail" type="checkbox" name="Daily Mail" value="daily-mail" onclick="checkboxClick()">Daily Mail</div>
+                    <div><input id="the-new-york-times" type="checkbox" name="The New York Times" value="the-new-york-times" onclick="checkboxClick()">The New York Times</div>
+                    <div><input id="the-washington-post" type="checkbox" name="The Washington Post" value="the-washington-post" onclick="checkboxClick()">The Washington Post</div>
+                    <div><input id="the-washington-times" type="checkbox" name="The Washington Times" value="the-washington-times" onclick="checkboxClick()"">The Washington Times</div>
+                    <br>
+
+                    <h3 id="keyword">Search</h3>
+                    <form>
+                        <div><input type="radio" id="everything" name="Everything" value="everything" checked> All the News Articles</div>
+                        <div><input type="radio" id="top-headlines" name="Top Headlines" value="top-headlines"> Top Headlines</div>
+                        <span><input id="search" type="text" placeholder=keyword name="Search Keyword"></span>
+                        <button type="button" class="btn btn-primary" id="search-box" onclick="searchCheckbox()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/newsfeed.js"></script>
+
+    <div class="footer-space">
+        &copy; 2018 Saksham Aggarwal
+    </div>
+
+</body>
+</html>

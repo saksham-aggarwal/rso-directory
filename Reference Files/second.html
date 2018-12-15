@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Mohammed Almaroof">
+  <meta name="description" content="Spec page for stage 1 of the INFO 340 project">
+  <meta name="keyword" content="Design,Spec,RSO,application,Client-Side">
+  <link rel="icon" type="image/svg+xml" href="img/paper-plane.svg">
+  <title>
+    Spec Page
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<body class="landing-page sidebar-collapse">
+  <main>
+    <section class="navigation-bar">
+      <nav class="navbar navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+        <div class="container">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" onclick="scrollToDownload()">
+                  <i class="material-icons">home</i>
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="search.html" onclick="scrollToDownload()">
+                    <i class="material-icons">search</i>
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="second.html" onclick="scrollToDownload()">
+                  <i class="material-icons">color_lens</i>
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="events.html" onclick="scrollToDownload()">
+                    <i class="material-icons">today</i>
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://uws-community.symplicity.com/index.php?au=&ck=" onclick="scrollToDownload()">
+                  Current RSO Directory
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class=header-picture>
+      <div class="page-header header-filter" data-parallax="true" style="background-image: url('img/SecondPic.jpg')">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="title">Create Lasting Bonds On Campus.</h1>
+              <h4>The college campus is home to thousands of students in their most important years.
+                It is the first taste of complete freedom of expression they have ever had, we find the ability for students to
+                feel comfortable on campus to be a pressing priority.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="spec">
+      <div class="main main-raised">
+        <div class="container">
+          <div class="section text-center">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto">
+                <h2 class="title">Our design specification</h2>
+                <p>
+                  While the project is still in progress, and these designs might undergo a change, 
+                  but our design emphasizes a more modern design that is familiar and intuitive to our users.
+                  We want our demographic to be able to easily interact with our application to fulfill a user need.
+                  The following is a wireframe to give an initial idea of what our project looks like:
+                </p>
+              </div>
+            </div>  
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                  <img src="img/home.svg" alt="Home" style="width:33%">
+                  <div class="container">
+                    <h4><b>Home Page</b></h4> 
+                    <p>Home page to welcome students into the page, immediately calls students to the 
+                      action of finding an RSO that fits them with the structure of the page. This page will also
+                      contain the searching algorithm that students can use to find RSOs.
+                    </p> 
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <img src="img/magnifying-glass.svg" alt="Magnifying Glass" style="width:33%">
+                  <div class="container">
+                    <h4><b>Searching Algorithm</b></h4> 
+                    <p>Searching mechanism that enables users to filter RSOs by interest, type of club, size,
+                      schedule, and even friends. This is powerful, as it allows students to shrink a huge campus
+                      to a small part. The searching algorithm is one of the most essential feature of the app.
+                    </p> 
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <img src="img/list.svg" alt="List" style="width:33%">
+                  <div class="container">
+                    <h4><b>Listing RSOs</b></h4> 
+                    <p>This page lists the resulting RSOs, typically from a search initiated by a user,
+                      and it will show some initial information about the RSO, such as purpose and what 
+                      a typical meeting entails. You can also get an idea of who is in the club from this page.
+                    </p> 
+                  </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/clipboard.svg" alt="Clipboard" style="width:33%">
+                    <div class="container">
+                      <h4><b>RSO Page</b></h4> 
+                      <p>This page will contain all the information the user needs about the RSO, and includes
+                        interactions such as joining the RSO, talking to members, paying fees, checking calendar,
+                        etc. 
+                      </p> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/user.svg" alt="User" style="width:33%">
+                    <div class="container">
+                      <h4><b>User Profile</b></h4> 
+                      <p>This application will contain its own social media that only students can use to 
+                        get in touch with other students. This page contains the student name, picture, and 
+                        ability to chat.
+                      </p> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/chat.svg" alt="Chat" style="width:33%">
+                    <div class="container">
+                      <h4><b>Messaging</b></h4> 
+                      <p>As part of the social media, users can chat with each other, which is helpful for when students
+                        meet each other during an RSO session and would like to keep in touch. This also supports group chats 
+                        within the RSO.
+                      </p> 
+                    </div>
+                </div>
+              </div>
+          </div>    
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+      <div class="container">
+          <p>Images credited to Unsplash, icons are credited to Entypo++ and Material-Kit</p>
+          <p>Fake user data from <a href="https://randomuser.me/documentation#howto">Random User API</a></p>
+          <p>Live-feed of events from <a href="https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#anchor_find">Ticketmaster's Discovery API</a></p>
+          <p>Mohammed Almaroof</p>
+          <p><a href="mailto:mfa8@uw.edu">Mfa8@uw.edu</a></p>
+      </div>
+  </footer>
+</body>
+</html>

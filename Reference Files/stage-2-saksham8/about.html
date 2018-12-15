@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Saksham Aggarwal">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="About" content="Details about the Project">
+    <title>About Student Hub</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" class="img-responsive header-img" alt="Student Hub Logo"></a>
+        <p class="social-media">
+            <a href="#facebook" class="fa fa-facebook" aria-label="Facebook"></a>
+            <a href="#twitter" class="fa fa-twitter" aria-label="Twitter"></a>
+            <a href="#google" class="fa fa-google" aria-label="Googel"></a>
+        </p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news-feed.html">News Feed</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="campus-events.html">Campus Events</a>
+                    <a class="dropdown-item" href="#shopping">Shopping</a>
+                    <a class="dropdown-item" href="storage-locator.html">Storage Space Locator</a>
+                </div>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card">
+            <p>This web applications will cater to students need such as - </p>
+                <ul>
+                    <li>1) finding cheap but good quality groceries</li>
+                    <li>2) storage space for out-of-state students while they go out on vacation or move-out of the dorms</li>
+                    <li>3) updates about events organized by various departments numerous student organization</li>
+                </ul>
+            <p>The reason I want to develop such applications is that I personally as a student find it really hard to keep track of
+                the events going around campus since each department and student organization post updates about their events either on
+                the departmental website or Facebook. Also, every student wants to save money while in college and try to find places where
+                they could get cheap groceries at affordable prices. Moreoever, out-of-state students living on campus usually find it very 
+                hard to find space to store their belongings over summer break so I think that developing an application (similar to Airbnb)
+                could be useful. Another useful add-on application on this web portal is the "NoProcrastinate" which has the ability to restrict
+                access to websites which students don't want to visit while they are working on their homework or studying for an exam.
+            </p>
+        </div>
+
+        <section>
+
+        <div class="card">
+            <h2 class="card-title">Finding Cheap Groceries</h2>
+            <p>So far, there are no such applications which could provide the client with such information. Also, this will be very
+                beneficial to college students which could help them save some extra money.In this applications, rates for all items 
+                will be picked up from all the nearby grocery stores and compared to give the lowest price and the location of the 
+                store. A user can choose the item they want to purchase and then the app will show up the store, its location and 
+                the price offered. This information will be chosen based on the lowest price of the item. 
+            </p>
+            <a href="#shopping" class="btn btn-dark">Check this out!</a>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Storage Space Locator</h2>
+            <p>The purpose of this application is to help out-of-state and international students who live on campus to find space to
+            store their stuff when they need to move-out of the dorms at the end of the academic year. In this application, there
+            will be two clients - </p>
+            <ul class="info">
+                <li>Storage space provider</li>
+                <li>Storage space utilizer</li>
+            </ul>
+            <p>The provider will have to create an account along with uploading pictures of the space and the dimensions which could give
+            the utilizer a good idea about whether their stuff would fit in that space. Also, the provider will be asked for how much
+            price they expect for the space and then the web application would calcuate the final price. Prior to posting the price, 
+            the provider will be asked for whether they agree with the price. This price will be calculated based on a certain formula
+            (TBD). On the other hand, the utilizer will be able to search for such storage spaces, compare prices and finally book the 
+            space for the duration entered by the utilizer.
+            </p>
+            <a href="#storage-locator" class="btn btn-dark">Check this out!</a>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Event Manager for Campus Events</h2>
+            <p>This applications will be developed for helping the students keep track of the events organized all around the campus whether
+            it is organized by a specific department like CSE, Informatics, Business School or a student organization. Moreover, events 
+            hosted by the career center such as career fairs, resume review workshop and many others will be listed on the application.
+            The layout of the application would be like a calendar (similar to Apple calendar) and all the events and their information
+            could be viewed at one place. There could also a remainder feature which the users can utilize to alert them about the events.
+            </p>
+            <a href="campus-events.html" class="btn btn-dark">Check this out!</a>
+        </div>
+
+        <div id="about.html#no-procrastinate-id"></div>
+        <div class="card">
+            <h2 class="card-title">News Feed</h2>
+            <p>This segment of the web application helps the students and the visitors of this website to keep up with the top headlines
+                of the day which can be filtered based on various news channels. Visitors can also look for numerous articles containing
+                a specific keyword.
+            </p>
+            <a href="news-feed.html" class="btn btn-dark">Check this out!</a>
+        </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <h3 class="card-title sources">Data Sources for Web Application</h3>
+                <!--card sources-->
+                <!--button rounded-button -->
+                <div class="flex-container">
+                    <a href="https://careers.uw.edu/events/student/" class="button rounded-button flex-item">Career and Internship Center Events</a>
+                    <a href="https://www.cs.washington.edu/academics/ugrad/advising_calendar" class="button rounded-button flex-item">CSE Event Calendar</a>
+                    <a href="https://ischool.uw.edu/events" class="button rounded-button flex-item">Information School Events</a>
+                    <a href="https://depts.washington.edu/thehub/hub-events/event-calendars/" class="button rounded-button flex-item">HUB Events</a>
+                    <a href="https://www.safeway.com/" class="button rounded-button flex-item">Safeway (Grocery Data)</a>
+                    <a href="https://www.qfc.com/" class="button rounded-button flex-item">QFC (Grocery Data)</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-space">
+        &copy; 2018 Saksham Aggarwal
+    </div>
+
+</body>
+</html>

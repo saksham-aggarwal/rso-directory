@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Mohammed Almaroof">
+  <meta name="description" content="Upcoming events page in Seattle">
+  <meta name="keyword" content="Design,Spec,RSO,application,Client-Side">
+  <link rel="icon" type="image/svg+xml" href="img/paper-plane.svg">
+  <script src="js/events.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <title>
+    Upcoming Events Page
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.js"></script>
+<body class="landing-page sidebar-collapse">
+  <main>
+    <section class="navigation-bar">
+      <nav class="navbar navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+        <div class="container">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" onclick="scrollToDownload()">
+                  <i class="material-icons">home</i>
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="search.html" onclick="scrollToDownload()">
+                    <i class="material-icons">search</i>
+                  </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="second.html" onclick="scrollToDownload()">
+                  <i class="material-icons">color_lens</i>
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="events.html" onclick="scrollToDownload()">
+                    <i class="material-icons">today</i>
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://uws-community.symplicity.com/index.php?au=&ck=" onclick="scrollToDownload()">
+                  Current RSO Directory
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class=header-picture>
+      <div class="page-header header-filter" data-parallax="true" style="background-image: url('img/event.jpg')">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="title identifier-class">Disocver events coming up.</h1>
+              <h4>It is hard to keep up with everything that is happening around you, so we have curated
+                  events going on soon that you can choose to attend.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search">
+      <div class="main main-raised">
+        <div class="container">
+          <div class="section text-center">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto">
+                <h2 class="title">Live feed of events happening soon in the area!</h2>
+              </div>
+            </div>  
+            <br>
+            <section class="Event-Results">
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            </ol>
+                        
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    
+                                </div>
+                            
+                                <div class="item">
+
+                                </div>
+                                
+                                <div class="item">
+
+                                </div> 
+
+                                <div class="item">
+
+                                </div> 
+
+                                <div class="item">
+
+                                </div> 
+                            </div>
+                        
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        </div>
+            </section>
+          </div>    
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+      <div class="container">
+          <p>Images credited to Unsplash, icons are credited to Entypo++ and Material-Kit</p>
+          <p>Fake user data from <a href="https://randomuser.me/documentation#howto">Random User API</a></p>
+          <p>Live-feed of events from <a href="https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/#anchor_find">Ticketmaster's Discovery API</a></p>
+          <p>Mohammed Almaroof</p>
+          <p><a href="mailto:mfa8@uw.edu">Mfa8@uw.edu</a></p>
+      </div>
+  </footer>
+</body>
+</html>

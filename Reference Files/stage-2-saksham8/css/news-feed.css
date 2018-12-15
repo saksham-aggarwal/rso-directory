@@ -1,0 +1,41 @@
+
+.fa-sm {
+    font-size: 1.2rem;
+    width: 100%
+}
+
+.fa:hover {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.author, .date-published {
+    font-size: 20px;
+}
